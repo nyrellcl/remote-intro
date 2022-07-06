@@ -1,0 +1,150 @@
+@media only screen and (max-width: 700px) {
+    .logo {
+        margin-left: 1rem;
+    }
+
+    [id^=drop]:checked + ul{
+        display: block;
+    }
+
+    .section-1-container {
+        margin: 0 auto;
+
+        .inner-container {
+            flex-direction: column-reverse;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            .remote {
+                h1 {
+                    width: 100%;
+                }
+
+                p {
+                    width: 100%;
+                }
+
+                .btn-3 {
+                    width: 150px;
+                    height: 50px;
+
+                }
+            }
+
+            #hero-photo {
+                img {
+                    width: 100%;
+
+
+                }
+            }
+        }
+    }
+
+    nav {
+        display: none;
+    }
+
+    //hamburger nav
+    .ham-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0;
+
+        #ham-icon {
+            display: block;
+            margin-right: 1rem;
+
+            div {
+                background-color: $almost-black;
+            }
+        }
+
+    }
+
+    .drop {
+        position: absolute;
+        top: 60px;
+        opacity: 0;
+        visibility: hidden;
+
+        li {
+            position: relative;
+            margin: 0;
+            width: 100%;
+            display: list-item;
+
+            &:hover>ul {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        margin-left: 1rem;
+    }
+    
+    nav{
+        display: none;
+    }
+    .ham-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0;
+
+        #ham-icon {
+            display: block;
+            margin-right: 1rem;
+
+            div {
+                background-color: $almost-black;
+            }
+        }
+    }
+    .section-1-container {
+        .inner-container {
+            .remote {
+                h1 {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                p {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .my-2 {
+                    display: flex;
+                    justify-content: center;
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-1-container {
+        .inner-container {
+            .remote {
+                h1 {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

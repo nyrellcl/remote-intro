@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+.btn-drop {
+  font-family: "Epilogue", sans-serif;
+  border: none;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 41%);
+  outline: none;
+  font-size: 1rem;
+}
+.btn-drop:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+label {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+}
+a:hover {
+  color: hsl(0deg, 0%, 8%);
+  cursor: pointer;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.section-1-container .inner-container .btn-3, .register .btn-2, .register .btn {
+  font-family: "Epilogue", sans-serif;
+  width: 140px;
+  height: 40px;
+  color: hsl(0deg, 0%, 41%);
+}
+.section-1-container .inner-container .btn-3:hover, .register .btn-2:hover, .register .btn:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 8%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-family: "Epilogue", sans-serif;
+}
+nav .nav-container {
+  display: flex;
+}
+nav .logo {
+  margin-left: 1rem;
+}
+nav .nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  list-style: none;
+}
+nav .nav-list span {
+  margin-left: 0.4rem;
+}
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.toggle, [id^=drop] {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul {
+  display: none;
+}
+
+.register {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-right: 1rem;
+}
+.register .btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.register .btn-2 {
+  border: 2px solid hsl(0deg, 0%, 41%);
+  background-color: transparent;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+.register .btn-2:hover {
+  border-color: hsl(0deg, 0%, 8%);
+}
+
+.section-1-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+}
+.section-1-container .inner-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.section-1-container .inner-container .remote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Epilogue", sans-serif;
+}
+.section-1-container .inner-container .remote h1 {
+  font-size: 3.15rem;
+  width: 100%;
+}
+.section-1-container .inner-container .remote p {
+  color: hsl(0deg, 0%, 41%);
+  line-height: 1.6;
+  width: 70%;
+}
+.section-1-container .inner-container .btn-3 {
+  background-color: hsl(0deg, 0%, 8%);
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  transition: all 300ms ease-out;
+}
+.section-1-container .inner-container .btn-3:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid hsl(0deg, 0%, 8%);
+}
+.section-1-container .inner-container .clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-1-container .inner-container #hero-photo img {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.ham-container {
+  width: 100%;
+  padding: 1rem 0 0 1rem;
+  display: none;
+}
+.ham-container #ham-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+.ham-container #ham-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: hsl(0deg, 0%, 8%);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0deg, 0%, 41%);
+  padding: 0;
+}
+.open .mobile-menu li {
+  padding: 0.5rem;
+}
+.open .mobile-menu li a {
+  color: hsl(213deg, 9%, 39%);
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(70vh - 50px);
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  background-color: #fff;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  align-items: center;
+}
+.dropdown:hover {
+  -webkit-text-decoration: underline white from-font;
+          text-decoration: underline white from-font;
+  cursor: pointer;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  top: 40px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 160px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  top: 80px;
+  margin: 10px 0 20px;
+  box-shadow: 2px 1px 10px -5px;
+}
+.dropdown-content a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 3rem;
+  padding: 0.4rem;
+  font-family: "Epilogue", sans-serif;
+  color: black;
+}
+.dropdown-content a:hover, .dropdown-content afocus {
+  color: hsl(0deg, 0%, 41%);
+}
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    margin-left: 1rem;
+  }
+
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+
+  .section-1-container {
+    margin: 0 auto;
+  }
+  .section-1-container .inner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-1-container .inner-container .remote h1 {
+    width: 100%;
+  }
+  .section-1-container .inner-container .remote p {
+    width: 100%;
+  }
+  .section-1-container .inner-container .remote .btn-3 {
+    width: 150px;
+    height: 50px;
+  }
+  .section-1-container .inner-container #hero-photo img {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .ham-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .ham-container #ham-icon {
+    display: block;
+    margin-right: 1rem;
+  }
+  .ham-container #ham-icon div {
+    background-color: hsl(0deg, 0%, 8%);
+  }
+
+  .drop {
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .drop li {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    display: list-item;
+  }
+  .drop li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 900px) {
+  .logo {
+    margin-left: 1rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .ham-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .ham-container #ham-icon {
+    display: block;
+    margin-right: 1rem;
+  }
+  .ham-container #ham-icon div {
+    background-color: hsl(0deg, 0%, 8%);
+  }
+
+  .section-1-container .inner-container .remote h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .section-1-container .inner-container .remote p {
+    width: 100%;
+    text-align: center;
+  }
+  .section-1-container .inner-container .remote .my-2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section-1-container .inner-container .remote h1 {
+    text-align: center;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
